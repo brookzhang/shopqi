@@ -10,7 +10,7 @@ gem 'sass-rails' # 放在assets分组会报错 http://j.mp/oj7y6K
 
 
 gem 'activeadmin'
-gem 'acts_as_list', git: 'git://github.com/swanandp/acts_as_list.git' # 支持同时删除多个记录
+gem 'acts_as_list', git: 'https://github.com/swanandp/acts_as_list.git' # 支持同时删除多个记录
 
 #use unicorn as web server
 gem 'unicorn'
@@ -42,7 +42,7 @@ gem 'therubyracer', require: nil unless ENV['TRAVIS'] # 编译coffee-script # �
 
 ##### 其他 #####
 gem "activemerchant" # 支付
-gem "activemerchant_patch_for_china", git: "git://github.com/saberma/activemerchant_patch_for_china.git" # 支持多个支付帐户(待完成其他财付通等类型后再send pull request)
+gem "activemerchant_patch_for_china", git: "https://github.com/saberma/activemerchant_patch_for_china.git" # 支持多个支付帐户(待完成其他财付通等类型后再send pull request)
 gem "httparty"
 #gem "resque" # 后台任务
 gem "resque", "~> 1.21.0"
@@ -52,14 +52,14 @@ gem "nokogiri" # 解释模板config/settings.html
 gem "uuid" # 生成36位(或32位)唯一序列号
 gem 'settingslogic' #用于解析一些配置信息
 #gem 'rack-perftools_profiler', :require => 'rack/perftools_profiler'
-gem 'grit', git: 'git://github.com/mojombo/grit.git' # 主题版本控制(每个商店主题都是一个git repository) # 2.4.1版本存在此问题 http://j.mp/uoEKw1
+gem 'grit' #, git: 'https://github.com/mojombo/grit.git' # 主题版本控制(每个商店主题都是一个git repository) # 2.4.1版本存在此问题 http://j.mp/uoEKw1
 gem 'doorkeeper', '~> 0.4.0'
 gem "oauth2", "~> 0.8.0"
 gem 'rabl' # 构造 json api 数据
 #gem 'newrelic_rpm' # 性能监控(模板编辑器中的layout/theme.liquid也会被注入script,暂时不使用此gem)
 gem "jquery-rails"
 gem 'rubyzip' # 解压缩用户上传的主题zip文件
-gem 'gollum', git: 'git://github.com/saberma/gollum.git'  #用于wiki系统，1.3.1需要安装Pygments http://j.mp/uHMN1L，开发版本使用payments.rb，但有waring提示'did not have a valid gemspec'
+gem 'gollum' #, git: 'https://github.com/saberma/gollum.git'  #用于wiki系统，1.3.1需要安装Pygments http://j.mp/uHMN1L，开发版本使用payments.rb，但有waring提示'did not have a valid gemspec'
 gem 'RedCloth'
 gem 'sitemap_generator' # 生成搜索引擎友好的sitemap # bundle exec rake sitemap:refresh:no_ping
 gem 'exception_notification' # 发生异常时邮件通知
